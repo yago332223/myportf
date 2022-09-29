@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora">
+    <input type="text" id="visor" class="form-control visor" placeholder="0" disabled="disabled" />
+      <table>
+        <tr>
+            <td> <button onclick="limpezatotal()" type="button" class="but">C</button></td>
+            <td> <button class="but"><</button></td>
+            <td> <button onclick="adicionae('/')" class="but">/</button></td>
+            <td> <button onclick="adicionae('*')" type="button" class="but">X</button></td>
+        </tr>
+        <tr>
+            <td> <button onclick="adicionae(7)" type="button"  class="but">7</button></td>
+            <td> <button onclick="adicionae(8)" type="button" class="but">8</button></td>
+            <td> <button onclick="adicionae(9)" type="button" class="but">9</button></td>
+            <td> <button onclick="adicionae('-')" type="button" class="but">-</button></td>
+        </tr>
+        <tr>
+            <td> <button onclick="adicionae(4)" type="button" class="but">4</button></td>
+            <td> <button onclick="adicionae(5)" type="button" class="but">5</button></td>
+            <td> <button onclick="adicionae(6)" type="button" class="but">6</button></td>
+            <td> <button onclick="adicionae('+')" type="button" class="but">+</button></td>
+        </tr>
+        <tr>
+            <td> <button onclick="adicionae(1)" type="button" class="but">1</button></td>
+            <td> <button onclick="adicionae(2)" type="button" class="but">2</button></td>
+            <td> <button onclick="adicionae(3)" type="button" class="but">3</button></td>
+            <td rowspan="2"> <button onclick="calculari()" type="button" class="but" style="height:146px ;" >=</button></td>
+        </tr>
+        <tr>
+            <td  colspan="2"> <button onclick="adicionae(0)" type="button" class="but" class="but" style="width:146px ;">0</button></td>
+            <td > <button class="but">.</button></td>  
+        </tr>
+      </table>
+    </div>
+    
+    
+    <footer><p>Feito por : Yago da Silva Morais</p></footer>     
+</body>
+<script src="script.js"></script>
+</html>
